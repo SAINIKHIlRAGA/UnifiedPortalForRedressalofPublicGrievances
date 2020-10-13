@@ -103,18 +103,19 @@
         <table>
         <tr>
             <th>S.No</th>
-            <th class="cid">Review Id</th>
-            <th class="ra">Complaint Id</th>
+            <th class="cid" style="max-width:10px;">RID</th>
+            <th class="ra" style="max-width:30px;">CID</th>
             <th class="ra">Department</th>
+            <th>Location</th>   
             <th class="ra" style="min-width:150px;">User Name</th>
             <th class="ra" style="min-width:150px;">Authority Name</th>
-            <th class="rvw">Review</th>
+            <th class="rvw" style="min-width:120px;">Review</th>
             <th style="min-width: 200px;">Complaint</th>
             <th class="ra">Given At</th>
         </tr>
         <?php 
         include('config.php');
-        $sql4 = "SELECT review_id, given_at, review, dept_name, complaint, complaints.complaint_id, user_id, complaints.authority_id as 'authority_id' from complaints join reviews on complaints.complaint_id = reviews.complaint_id join departments on departments.dept_id = complaints.dept_id";
+        $sql4 = "SELECT review_id, given_at, review, dept_name, location, complaint, complaints.complaint_id, user_id, complaints.authority_id as 'authority_id' from complaints join reviews on complaints.complaint_id = reviews.complaint_id join departments on departments.dept_id = complaints.dept_id";
         $result4 = $conn->query($sql4);
         if($result4->num_rows > 0)
         {
@@ -143,7 +144,7 @@
                 $review_id = $row['review_id'];
                 
                 $complaint = $row['complaint'];
-                echo "<tr><td>".$i++."</td><td class='cid'>".$row["review_id"]."</td><td class='ra'>".$row['complaint_id']."</td><td class='ra'>".$row['dept_name']."</td><td class='ra'>".$user_name."</td><td class='ra'>".$authority_name."</td><td class='rvw'>"."<button class='btn btn-success' onclick=\"view_review('$review', $comp_id, $review_id)\"><small>View Review</small></button>"."</td><td>"."<button class='btn btn-success' onclick=\"view_complaint('$complaint', $comp_id)\"><small>View Complaint</small></button>"."</td><td>".$row['given_at']."</td></tr>";
+                echo "<tr><td>".$i++."</td><td class='cid'>".$row["review_id"]."</td><td class='ra'>".$row['complaint_id']."</td><td class='ra'>".$row['dept_name']."</td><td class='ra'>".$row['location']."</td><td class='ra'>".$user_name."</td><td class='ra'>".$authority_name."</td><td class='rvw'>"."<button class='btn btn-success' onclick=\"view_review('$review', $comp_id, $review_id)\"><small>View Review</small></button>"."</td><td>"."<button class='btn btn-success' onclick=\"view_complaint('$complaint', $comp_id)\"><small>View Complaint</small></button>"."</td><td>".$row['given_at']."</td></tr>";
             }
         }
 
