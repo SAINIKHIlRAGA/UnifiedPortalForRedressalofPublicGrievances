@@ -1,0 +1,89 @@
+body{
+    background-color:bisque; 
+ }
+ h1{
+     text-align: center;
+     color: black;
+     font-family: cursive;
+
+     padding-top: 5px;
+     padding-bottom: 5px;
+
+ }
+ .main, .main1, .main2, .main3{
+     margin-top: 20px; 
+     display: flex;
+     flex-direction: row;
+     border:2px solid blueviolet;
+     border-radius: 10px;
+     background-color:turquoise;
+     height:360px;
+     margin-bottom: -20px;
+ }
+ a{
+     text-decoration: none;
+ }
+ .left, .right, .left1, .right1, .left2, .right2, .left3, .right3{
+     box-sizing: border-box;
+     width: 600px;
+     height: 300px;
+     color: black;
+     font-family: cursive;
+     font-size: 30px;
+     border-radius: 20px;
+     border: 3px solid rgb(153, 165, 42);
+     text-align: center;
+     background-color: white;
+     margin-top: 30px;
+     margin-left: 40px;
+     padding-top: 20px;
+     transition: transform 0.2s;
+ }
+ .left{
+     background-image: url("IMAGES/ROADACCIDENT.jpg");
+     background-size: cover;
+     margin-right: 20px;
+ }
+ .right{
+     background-image: url("IMAGES/CORRUPTION.jpg");
+     background-size: 600px 330px;
+     background-repeat: no-repeat;
+ }
+ .left1{
+     background-image: url("IMAGES/GARBAGE.jpeg");
+     background-size: 450px 220px;
+     background-position-x: 50px;
+     background-position-y: 60px;
+     margin-right: 20px;
+     background-repeat: no-repeat;
+ }
+ .right1{
+     background-image: url("IMAGES/WATERLEAKAGE.jpg");
+     background-size: 600px 300px;
+     background-repeat: no-repeat;
+ }
+ .left2{
+     background-image: url("IMAGES/ROBBERY.jpg");
+     background-size: 600px 300px;
+     margin-right: 20px;
+ }
+ .right2{
+     background-image: url( "IMAGES/CYBERCRIME.jpg");
+     background-size: 600px 300px;
+     background-repeat: no-repeat;
+ }
+ .left3{
+     background-image: url("IMAGES/SEXUALHARASSMENT.webp");
+     background-size: 600px 330px;
+     margin-right: 20px;
+ }
+ .right3{
+     background-image: url("IMAGES/DOMESTICVIOLENCE.jpg");
+     background-size: 600px 330px;
+     background-repeat: no-repeat;
+ }
+ .left:hover, .right:hover, .left1:hover, .right1:hover,.left2:hover, .right2:hover, .left3:hover, .right3:hover{
+     color: brown;
+     transform: scale(1.1);
+     font-size: 300%;
+ }

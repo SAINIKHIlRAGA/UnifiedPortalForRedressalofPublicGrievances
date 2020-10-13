@@ -1,0 +1,49 @@
+body{
+    background-image: url("https://wallpapertag.com/wallpaper/full/e/1/0/118962-best-background-gradient-1920x1200-for-tablet.jpg");
+    background-size: cover;
+}
+.log{
+    box-sizing: border-box;
+    contain: layout;
+    width: 300px;
+    height: 320px; 
+    border: 1px solid violet;
+    margin-top: 15%;
+    margin-left: 40%;
+    background-color:rgb(20,20,20);
+    padding-top: 100px;
+    text-align: center;
+    border-radius: 10%;
+}
+.log img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+input{
+    outline: none;
+    background-color: transparent;
+    text-align: center;
+    border: 0;
+    border-bottom: 1px solid aqua;
+    border-radius: 2px;
+    margin-bottom: 18px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: blanchedalmond;
+}
+.sub{
+    border: 1px solid aqua;
+    margin-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    color: aliceblue;
+    border-radius: 20px;
+} 
+a{
+    color: gray;
+}
